@@ -1,3 +1,7 @@
-const container = document.querySelector(".container");
-let initialBoxes = 16;
 
+generateGrid(initialBoxes);
+
+const button = document.getElementById('change');
+button.addEventListener('click', () => {
+    generateGrid(userInput());
+})
